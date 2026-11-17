@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # AI クローラーも許可 (llms.txt / llms-full.txt を参照)
-Sitemap: https://meihei3.github.io/konsyuu-no-php/sitemap-index.xml
+Sitemap: https://weekly-php.meihei.dev/sitemap-index.xml

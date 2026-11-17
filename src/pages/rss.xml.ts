@@ -9,12 +9,12 @@ export const GET: APIRoute = async (context) => {
   return rss({
     title: '今週のPHP internals',
     description: 'php.internals の過去1週間の議論を、RFCに限らず日本語で噛み砕いてまとめる週次レポート。',
-    site: context.site ?? 'https://meihei3.github.io/',
+    site: context.site ?? 'https://weekly-php.meihei.dev/',
     items: posts.map((post) => ({
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      // link は base 付きで渡す (site だけでは /konsyuu-no-php/ が付かないため)。
+      // link は BASE_URL 付きで渡す（現在はルート '/'）。
       link: `${import.meta.env.BASE_URL}posts/${post.id.replace(/\.md$/, '')}/`,
     })),
   });
