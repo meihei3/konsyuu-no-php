@@ -6,7 +6,7 @@ export const GET: APIRoute = async () => {
   const posts = (await getCollection('posts')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   );
-  const parts = ['# 今週のPHP internals — 全文', ''];
+  const parts = ['# 今週のPHP（Re） — 全文', ''];
   for (const post of posts) {
     parts.push(`## ${post.data.title}`, '', post.body ?? '', '');
   }

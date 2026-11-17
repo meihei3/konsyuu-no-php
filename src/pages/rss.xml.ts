@@ -7,7 +7,7 @@ export const GET: APIRoute = async (context) => {
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   );
   return rss({
-    title: '今週のPHP internals',
+    title: '今週のPHP（Re）',
     description: 'php.internals の過去1週間の議論を、RFCに限らず日本語で噛み砕いてまとめる週次レポート。',
     site: context.site ?? 'https://weekly-php.meihei.dev/',
     items: posts.map((post) => ({

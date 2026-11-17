@@ -2,7 +2,7 @@
   "dependencies": {
     "astro": "^7.4.12"
   },
-  "description": "今週のPHP internals — php.internals の週次レポートを日本語で届けるブログ (GitHub Pages)",
+  "description": "今週のPHP（Re） — php.internals の週次レポートを日本語で届けるブログ (GitHub Pages)",
   "devDependencies": {
     "@astrojs/rss": "^4.0.0",
     "@astrojs/sitemap": "^3.2.0"

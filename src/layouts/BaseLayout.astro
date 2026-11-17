@@ -17,7 +17,7 @@ const jsonLd = {
   description,
   inLanguage: 'ja',
   ...(pubDate ? { datePublished: pubDate.toISOString() } : {}),
-  author: { '@type': 'Organization', name: '今週のPHP internals' },
+  author: { '@type': 'Organization', name: '今週のPHP（Re）' },
   mainEntityOfPage: canonical,
 };
 ---
@@ -31,7 +31,7 @@ const jsonLd = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content={type} />
-    <meta property="og:site_name" content="今週のPHP internals" />
+    <meta property="og:site_name" content="今週のPHP（Re）" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -39,7 +39,7 @@ const jsonLd = {
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <link rel="alternate" type="application/rss+xml" title="今週のPHP internals" href={`${import.meta.env.BASE_URL}rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title="今週のPHP（Re）" href={`${import.meta.env.BASE_URL}rss.xml`} />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     <style>
       body { font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; line-height: 1.8; max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; color: #1a1a1a; }
@@ -52,7 +52,7 @@ const jsonLd = {
     </style>
   </head>
   <body>
-    <header><a href={import.meta.env.BASE_URL}>今週のPHP internals</a></header>
+    <header><a href={import.meta.env.BASE_URL}>今週のPHP（Re）</a></header>
     <main><slot /></main>
     <footer>
       <hr />

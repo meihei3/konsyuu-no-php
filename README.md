@@ -1,4 +1,4 @@
-# 今週のPHP internals — GitHub Pages サイト
+# 今週のPHP（Re） — GitHub Pages サイト
 
 Astro 製の静的ブログ。Markdown 原稿（`src/content/posts/*.md`）を置くだけで、記事一覧・記事ページ・RSS・sitemap・llms.txt / llms-full.txt・JSON-LD 付きで公開される。
 
