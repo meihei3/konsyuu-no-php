@@ -14,6 +14,10 @@ export const GET: APIRoute = async ({ site }) => {
     '',
     '> php.internals の過去1週間の議論を、RFCに限らず日本語で噛み砕いてまとめる週次レポート。',
     '',
+    '## サイト情報',
+    '',
+    `- [このサイトについて](${base}/about/): 成り立ちと、hanhan1978 さんの「今週のPHP」へのリスペクトについて。`,
+    '',
     '## 記事一覧',
     '',
     ...posts.map(
