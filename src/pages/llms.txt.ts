@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ site }) => {
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   );
   const lines = [
-    '# 今週のPHP internals',
+    '# 今週のPHP（Re）',
     '',
     '> php.internals の過去1週間の議論を、RFCに限らず日本語で噛み砕いてまとめる週次レポート。',
     '',
