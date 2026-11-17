@@ -3,14 +3,14 @@
 
 使い方: python3 scripts/make-ogp.py
 要 Pillow。フォントは Ema の指定 (2026-11-17) で Noto Sans
-(Noto Sans CJK JP, Regular)。デザインも Ema の指定で
+(Noto Sans CJK JP, Bold)。デザインも Ema の指定で
 「白背景に『今週のPHP（Re）』の文字だけ」。装飾・説明文・ドメイン表記なし。
 """
 from PIL import Image, ImageDraw, ImageFont
 
 W, H = 1200, 630
 DARK = (26, 26, 26)         # #1a1a1a
-FONT = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
+FONT = "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc"
 
 img = Image.new("RGB", (W, H), (255, 255, 255))
 d = ImageDraw.Draw(img)
