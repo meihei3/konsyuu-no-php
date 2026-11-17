@@ -4,7 +4,7 @@ import type { APIRoute } from 'astro';
 // llms.txt: AI 向けの記事一覧 (Ema の要望: llms.txt 対応)。
 export const GET: APIRoute = async ({ site }) => {
   const base =
-    (site?.toString() ?? 'https://meihei3.github.io/').replace(/\/$/, '') +
+    (site?.toString() ?? 'https://weekly-php.meihei.dev/').replace(/\/$/, '') +
     import.meta.env.BASE_URL.replace(/\/$/, '');
   const posts = (await getCollection('posts')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),

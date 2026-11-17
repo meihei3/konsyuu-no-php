@@ -1,13 +1,13 @@
-// GitHub Pages (project site) — Ema の決定 (2026-11-16):
-// ホスティングは GitHub Pages のみ、ドメインはデフォルト (meihei3.github.io) のまま。
-// リポジトリ名 konsyuu-no-php は Ema が 2026-11-16 13:16 JST に作成した実際の名前。変える場合は site と base を一緒に変える。
+// GitHub Pages + 独自ドメイン — Ema の決定 (2026-11-17):
+// ホスティングは GitHub Pages のみ、ドメインは weekly-php.meihei.dev。
+// リポジトリ名は konsyuu-no-php（Ema が 2026-11-16 に作成）。
+// 独自ドメインではサイトがルートで公開されるため base は '/'。
+// ドメインを変える場合は site と public/CNAME と robots.txt の Sitemap を一緒に変える。
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  // site はドメインのルート、base がリポジトリ名。site に base を含めると
-  // canonical や RSS の URL が二重になるので分けて書く。
-  site: 'https://meihei3.github.io',
-  base: '/konsyuu-no-php/',
+  site: 'https://weekly-php.meihei.dev',
+  base: '/',
   integrations: [sitemap()],
 });
