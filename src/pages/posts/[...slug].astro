@@ -15,7 +15,7 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout
-  title={`${post.data.title} | 今週のPHP（Re）`}
+  title={post.data.title}
   description={post.data.description}
   canonicalPath={`posts/${post.id.replace(/\.md$/, '')}/`}
   pubDate={post.data.pubDate}
