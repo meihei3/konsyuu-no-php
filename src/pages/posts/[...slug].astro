@@ -29,7 +29,9 @@ const shareLinks = [
   <p class="meta">{post.data.pubDate.toISOString().slice(0, 10)}</p>
   <h1>{post.data.title}</h1>
   <p class="lead">{post.data.description}</p>
-  <Content />
+  <div class="post-body">
+    <Content />
+  </div>
   <div class="share">
     <span class="share-label">シェア</span>
     {
@@ -57,6 +59,17 @@ const shareLinks = [
     });
   </script>
   <style>
+    /* internals (externals.io) へのリンクは php.net マニュアルの見出し色 #793862。
+       訪問済みは少し薄く、hover は少し濃く (Ema の指定 2026-11-18)。 */
+    .post-body a[href*='externals.io'] {
+      color: #793862;
+    }
+    .post-body a[href*='externals.io']:visited {
+      color: #a17491;
+    }
+    .post-body a[href*='externals.io']:hover {
+      color: #5f2c4c;
+    }
     .share {
       display: flex;
       flex-wrap: wrap;
