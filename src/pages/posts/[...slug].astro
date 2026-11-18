@@ -58,17 +58,18 @@ const shareLinks = [
       }
     });
   </script>
-  <style>
-    /* internals (externals.io) へのリンクは php.net マニュアルの見出し色 #793862。
-       訪問済みは少し薄く、hover は少し濃く (Ema の指定 2026-11-18)。 */
+  <style is:global>
+    /* internals (externals.io) へのリンクは externals.io 本文リンクの赤 #e7000b。
+       訪問済みは少し薄く、hover は少し濃く (Ema の指定 2026-11-18)。
+       Markdown 生成のリンクにも届くよう、この style は is:global が必須。 */
     .post-body a[href*='externals.io'] {
-      color: #793862;
+      color: #e7000b;
     }
     .post-body a[href*='externals.io']:visited {
-      color: #a17491;
+      color: #ef5960;
     }
     .post-body a[href*='externals.io']:hover {
-      color: #5f2c4c;
+      color: #b90009;
     }
     .share {
       display: flex;
