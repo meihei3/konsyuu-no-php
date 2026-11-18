@@ -5,6 +5,7 @@
 要 Pillow。フォントは Ema の指定 (2026-11-17) で Noto Sans
 (Noto Sans CJK JP, Bold)。デザインも Ema の指定で
 「白背景に『今週のPHP（Re）』の文字だけ」。装飾・説明文・ドメイン表記なし。
+画像を変えたら BaseLayout.astro の og.png?v= の数字も上げること（SNS のキャッシュ対策）。
 """
 from PIL import Image, ImageDraw, ImageFont
 
