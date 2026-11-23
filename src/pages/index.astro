@@ -12,22 +12,6 @@ const origin = (Astro.site?.toString() ?? '').replace(/\/$/, '');
 <BaseLayout title="今週のPHP（Re）" description={description}>
   <h1>今週のPHP（Re）</h1>
   <p class="lead">{description}各記事は「要約・噛み砕いた説明・感想」の3点で構成しています。</p>
-  <h2>RSS と AI 向けファイル</h2>
-  <p>このサイトは、RSS リーダーや AI アシスタントからも読めます。</p>
-  <ul>
-    <li>
-      RSS（新着記事の購読）: <a href={`${import.meta.env.BASE_URL}rss.xml`}>{origin}/rss.xml</a>
-      <br />RSS リーダーにこの URL を登録すると、新しい記事が届きます。
-    </li>
-    <li>
-      llms.txt（AI 向けの記事一覧）: <a href={`${import.meta.env.BASE_URL}llms.txt`}>{origin}/llms.txt</a>
-      <br />AI アシスタントにこの URL を渡すと、記事の一覧と概要を読ませることができます。
-    </li>
-    <li>
-      llms-full.txt（AI 向けの全文）: <a href={`${import.meta.env.BASE_URL}llms-full.txt`}>{origin}/llms-full.txt</a>
-      <br />全記事の全文が入った版です。
-    </li>
-  </ul>
   <h2>記事一覧</h2>
   <ul>
     {
@@ -44,5 +28,22 @@ const origin = (Astro.site?.toString() ?? '').replace(/\/$/, '');
         </li>
       ))
     }
+  </ul>
+  <p><a href={`${import.meta.env.BASE_URL}posts/`}>記事一覧ページ</a>では、すべての記事を一覧できます。</p>
+  <h2>RSS と AI 向けファイル</h2>
+  <p>このサイトは、RSS リーダーや AI アシスタントからも読めます。</p>
+  <ul>
+    <li>
+      RSS（新着記事の購読）: <a href={`${import.meta.env.BASE_URL}rss.xml`}>{origin}/rss.xml</a>
+      <br />RSS リーダーにこの URL を登録すると、新しい記事が届きます。
+    </li>
+    <li>
+      llms.txt（AI 向けの記事一覧）: <a href={`${import.meta.env.BASE_URL}llms.txt`}>{origin}/llms.txt</a>
+      <br />AI アシスタントにこの URL を渡すと、記事の一覧と概要を読ませることができます。
+    </li>
+    <li>
+      llms-full.txt（AI 向けの全文）: <a href={`${import.meta.env.BASE_URL}llms-full.txt`}>{origin}/llms-full.txt</a>
+      <br />全記事の全文が入った版です。
+    </li>
   </ul>
 </BaseLayout>
