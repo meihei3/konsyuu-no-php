@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
 
-// llms.txt: AI 向けの記事一覧 (Ema の要望: llms.txt 対応)。
+// llms.txt: AI 向けの記事一覧。
 export const GET: APIRoute = async ({ site }) => {
   const base =
     (site?.toString() ?? 'https://weekly-php.meihei.dev/').replace(/\/$/, '') +
