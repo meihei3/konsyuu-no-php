@@ -2,8 +2,8 @@
 """OGP 画像 (public/og.png, 1200x630) を生成する。
 
 使い方: python3 scripts/make-ogp.py
-要 Pillow。フォントは Ema の指定 (2026-11-17) で Noto Sans
-(Noto Sans CJK JP, Bold)。デザインも Ema の指定で
+要 Pillow。フォントは Noto Sans
+(Noto Sans CJK JP, Bold)。デザインは
 「白背景に『今週のPHP（Re）』の文字だけ」。装飾・説明文・ドメイン表記なし。
 画像を変えたら BaseLayout.astro の og.png?v= の数字も上げること（SNS のキャッシュ対策）。
 """
