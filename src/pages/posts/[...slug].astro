@@ -24,6 +24,7 @@ const shareLinks = [
   description={post.data.description}
   canonicalPath={`posts/${post.id.replace(/\.md$/, '')}/`}
   pubDate={post.data.pubDate}
+  tags={post.data.tags}
   type="article"
 >
   <p class="meta">{post.data.pubDate.toISOString().slice(0, 10)}</p>
